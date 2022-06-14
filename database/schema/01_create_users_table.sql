@@ -1,0 +1,10 @@
+CREATE TABLE users
+(
+id INT NOT NULL AUTO_INCREMENT,
+email VARCHAR(100) UNIQUE NOT NULL,
+nickname VARCHAR(50),
+password VARCHAR(300),
+profile_image VARCHAR(3000),
+created_at DATETIME DEFAULT NOW(),
+PRIMARY KEY (id)
+); 
